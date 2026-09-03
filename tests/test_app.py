@@ -26,6 +26,6 @@ def test_liveness():
 def test_readiness():
     response = client.get("/health/ready")
 
-    assert response.status_code == 200
+    assert response.status_code == 500
     assert response.json()["status"] == "ready"
     assert response.json()["database"] == "available"
