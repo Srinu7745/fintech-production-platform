@@ -28,4 +28,4 @@ def test_readiness():
 
     assert response.status_code == 200
     assert response.json()["status"] == "ready"
-    assert response.json()["database"] == "a vailable"
+    assert response.json()["database"] == "available"
